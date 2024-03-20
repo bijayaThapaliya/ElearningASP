@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{24857485-F9CE-45F0-844A-E604EE36E25B}|https">
+  <MonoDevelop.Ide.ItemProperties.ELearning PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+    <Files>
+      <File FileName="Models/Student.cs" />
+      <File FileName="Models/Course.cs" />
+      <File FileName="Models/Lesson.cs" />
+      <File FileName="Models/Progress.cs" />
+      <File FileName="Models/Enrollment.cs" />
+      <File FileName="Models/TeacherCourse.cs" />
+      <File FileName="Models/Teacher.cs" />
+      <File FileName="appsettings.json" />
+      <File FileName="Program.cs" Line="24" Column="1" />
+      <File FileName="Data/ApplicationDbContext.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ELearning" expanded="True">
+            <Node name="ELearning" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

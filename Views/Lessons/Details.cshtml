@@ -1,0 +1,52 @@
+@model ELearning.Models.Lesson
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Lesson</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Course)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Course.Id)
+        </dd>
+    </dl>
+    <h1>@Model.Title</h1>
+
+    <form id="completeForm" asp-action="ToggleCompletion" asp-route-lessonId="@Model.Id" method="post">
+        <button id="completeButton" type="submit" class="btn btn-primary">
+            @if (Model.IsCompleted)
+            {
+                <span>Completed</span>
+            }
+            else
+            {
+                <span>Next</span>
+            }
+        </button>
+    </form>
+
+    @section Scripts
+{
+        <script>document.getElementById("completeForm").addEventListener("submit", function () {
+                // Disable the button once it's clicked
+                document.getElementById("completeButton").disabled = true;
+            });</script>
+    }
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
